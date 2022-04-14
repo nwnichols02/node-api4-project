@@ -9,6 +9,7 @@ server.use(cors());
 
 server.get("/", (req, res) => {
   res.send("Hello from outer space!");
+  res.json({ABC: process.env.ABC});
 });
 
 
